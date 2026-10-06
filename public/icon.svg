@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a192f"/>
+      <stop offset="50%" stop-color="#0f2b48"/>
+      <stop offset="100%" stop-color="#050e1a"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fcd34d"/>
+      <stop offset="50%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="riverGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0284c7"/>
+    </linearGradient>
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+  </defs>
+
+  <!-- Background Base -->
+  <rect width="512" height="512" rx="108" fill="url(#bgGrad)"/>
+  
+  <!-- Outer Decorative Ring -->
+  <circle cx="256" cy="256" r="216" fill="none" stroke="url(#goldGrad)" stroke-width="6" opacity="0.4" stroke-dasharray="16 12"/>
+  <circle cx="256" cy="256" r="200" fill="none" stroke="#f59e0b" stroke-width="2" opacity="0.3"/>
+
+  <!-- Star of Ishtar / Mesopotamian Emblem (8-pointed) -->
+  <g filter="url(#glow)">
+    <!-- Central Palm & Ziggurat Emblem -->
+    <!-- Ziggurat Base Tier 1 -->
+    <path d="M120 360 L392 360 L368 316 L144 316 Z" fill="url(#goldGrad)"/>
+    <!-- Ziggurat Tier 2 -->
+    <path d="M152 312 L360 312 L338 272 L174 272 Z" fill="url(#goldGrad)" opacity="0.95"/>
+    <!-- Ziggurat Tier 3 (Temple) -->
+    <path d="M184 268 L328 268 L310 232 L202 232 Z" fill="url(#goldGrad)" opacity="0.9"/>
+    <!-- Ziggurat Shrine -->
+    <rect x="226" y="202" width="60" height="30" rx="4" fill="url(#goldGrad)"/>
+    <rect x="244" y="212" width="24" height="20" rx="2" fill="#0a192f"/>
+
+    <!-- Central Stairs Ramp -->
+    <polygon points="256,232 236,360 276,360" fill="#78350f" opacity="0.7"/>
+  </g>
+
+  <!-- Tigris & Euphrates Waves -->
+  <path d="M96 404 C156 384, 196 424, 256 404 C316 384, 356 424, 416 404" 
+        fill="none" stroke="url(#riverGrad)" stroke-width="12" stroke-linecap="round" opacity="0.85"/>
+  <path d="M116 428 C176 412, 206 444, 256 428 C306 412, 336 444, 396 428" 
+        fill="none" stroke="url(#riverGrad)" stroke-width="8" stroke-linecap="round" opacity="0.5"/>
+
+  <!-- Golden 8-Pointed Star of Mesopotamia above Ziggurat -->
+  <g transform="translate(256, 136)" filter="url(#glow)">
+    <!-- Vertical and Horizontal diamond points -->
+    <polygon points="0,-48 10,-12 48,0 10,12 0,48 -10,12 -48,0 -10,-12" fill="url(#goldGrad)"/>
+    <!-- Diagonal rays -->
+    <polygon points="0,-32 7,-8 32,0 7,8 0,32 -7,8 -32,0 -7,-8" transform="rotate(45)" fill="#fef08a" opacity="0.8"/>
+    <!-- Center circle -->
+    <circle cx="0" cy="0" r="10" fill="#ffffff"/>
+  </g>
+</svg>

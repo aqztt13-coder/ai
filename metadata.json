@@ -1,0 +1,10 @@
+{
+  "name": "Remix دليل العراق السياحي | Iraq Tourism Guide",
+  "description": "المنصة السياحية الرقمية الشاملة لجمهورية العراق - اكتشف المعالم الدينية والأثرية والتاريخية والطبيعية ومخطط الرحلات التفاعلي.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

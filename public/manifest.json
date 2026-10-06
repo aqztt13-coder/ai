@@ -1,0 +1,64 @@
+{
+  "id": "/",
+  "name": "دليل العراق السياحي | Iraq Tourism Guide",
+  "short_name": "دليل العراق",
+  "description": "المنصة السياحية الرقمية الشاملة لجمهورية العراق - المعالم الدينية والأثرية والتاريخية والطبيعية ومخطط الرحلات.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#0d2137",
+  "background_color": "#0c1524",
+  "dir": "rtl",
+  "lang": "ar",
+  "categories": ["travel", "navigation", "culture", "lifestyle"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/pwa-maskable-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "استكشف المعالم",
+      "short_name": "المعالم",
+      "description": "تصفح معالم العراق السياحية والأثرية",
+      "url": "/",
+      "icons": [{ "src": "/icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "الخريطة التفاعلية",
+      "short_name": "الخريطة",
+      "description": "عرض خريطة العراق السياحية",
+      "url": "/",
+      "icons": [{ "src": "/icon.svg", "sizes": "any" }]
+    },
+    {
+      "name": "مخطط الرحلات",
+      "short_name": "الرحلات",
+      "description": "برامج الرحلات وجدول الزيارات",
+      "url": "/",
+      "icons": [{ "src": "/icon.svg", "sizes": "any" }]
+    }
+  ]
+}
