@@ -11,7 +11,7 @@ export const GovernoratesView: React.FC = () => {
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8 pt-4">
       <div className="border-b border-stone-200 pb-6">
         <h1 className="font-heritage text-3xl sm:text-4xl font-bold text-stone-900">
-          {isAr ? 'محافظات جمهورية العراق (18 محافظة)' : 'Governorates of Iraq (All 18 Provinces)'}
+          {isAr ? 'محافظات جمهورية العراق (19 محافظة)' : 'Governorates of Iraq (All 19 Provinces)'}
         </h1>
         <p className="text-stone-500 text-xs sm:text-sm mt-1">
           {isAr
